@@ -1,0 +1,9 @@
+<%= @user.email %>
+<% @photos.each do |p| %>
+<%= p.url %>
+<%end%>
+
+<%= form_for(@user, Photo.new) do |f| %>
+<%= f.text_field :url %>
+<%= f.submit %>
+<%end%>

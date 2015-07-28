@@ -1,0 +1,9 @@
+<h1>Welcome to your personal photo Log.</h1>
+<!-- <p>Find me in app/views/users/index.html.erb</p>  -->
+ <%@users.each do |u|%>
+<ul>
+<%=u.email%>
+</ul>
+
+<!-- <%=u.password_digest%> -->
+<%end%>
